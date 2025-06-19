@@ -48,6 +48,7 @@ These samples are designed to be copied, adapted, and reused to accelerate your 
   - [Generate test combinaison for access control](unit-test/access-control.md)
   - [Test review](unit-test/test-review.md)
   - [Mock writing](mock-writing.md)
+  - [Code optimization](code-optimization.md)
 - Readme.md work
   - [Generate a Readme](generate-readme.md)
   - [Update a Readme](update-readme.md)
