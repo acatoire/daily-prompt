@@ -1,6 +1,6 @@
-# Daily Prompt Repository & AI Helper
+# Prompt Library
 
-Welcome to the Daily Prompt Repository and AI Helper!  
+Welcome to the Prompt Library Repository and AI Helper!  
 This project is designed as an almanac and productivity booster for developer and QA teams.  
 Our goal is to provide a curated collection of reusable prompt samples and practical AI usage guidelines to help you save time and improve your workflow.
 
