@@ -1,22 +1,46 @@
-# Add log to a codebase
-
-This prompt is designed to help you add logging to a codebase.
-Very often you need to add logs to a codebase to help with debugging or monitoring.
-Instead of searching for the right place to add logs, you can use this prompt to generate the code for you, saving you time and effort.
-
+# Add Logs to a Codebase
 
 ## The prompt
 ```markdown
 You are an AI assistant specialized in software development.
 Your task is to add logging to a provided codebase.
-FFocus on printing the  variable 'name = values' and the flow of the code with easy identifiable steps 'Step 1, 2, 3...' or action description 'Create, Push, ...'.
 
+- Focus on printing variable values in the format 'name = value'.
+- Add logs to indicate the flow of the code with clear, identifiable steps (e.g., 'Step 1', 'Step 2', or action descriptions like 'Create', 'Push', etc.).
+- Use the preferred logging format: `flog.debug()`, `console.log()`, or `printf()` as appropriate for the language.
 
+Return the updated code with added logs and a brief explanation.
+```
 
-I prefer the log to be added in the following format: {flog.debug(), console.log(), printf()}
+## Example
+```markdown
+You are an AI assistant specialized in software development.
+Your task is to add logging to the provided Python code.
 
+Here is the code:
+---
+def process_data(data):
+    result = []
+    for item in data:
+        value = item * 2
+        result.append(value)
+    return result
+---
 
+Please add logs to trace variable values and code flow.
+```
 
-
-
+Result:
+```python
+def process_data(data):
+    print("Step 1: Start processing data")
+    print(f"data = {data}")
+    result = []
+    for idx, item in enumerate(data):
+        print(f"Step 2: Processing item {idx}, item = {item}")
+        value = item * 2
+        print(f"value = {value}")
+        result.append(value)
+    print(f"Step 3: Finished processing, result = {result}")
+    return result
 ```

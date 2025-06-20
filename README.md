@@ -46,6 +46,7 @@ These samples are designed to be copied, adapted, and reused to accelerate your 
   - [Test review](unit-test/test-review.md)
   - [Mock writing](mock-writing.md)
   - [Test tagging](tagging.md)
+  - [Code playwright generate page method](code-playwright-generate-page-method.md)
 - Debugging
   - [Add logs to a codebase](add-logs-to-code.md)
   - [Debugging a codebase](debugging.md)
@@ -113,6 +114,7 @@ As our official company tool, GitHub Copilot can help you:
 - Review and edit suggestions for accuracy and security.
 - Combine Copilot with code reviews for best results.
 
+[Internal Copilot Guide](copilot-guide.md)
 For more tips, see the [official Copilot documentation](https://docs.github.com/en/copilot).
 
 ---
