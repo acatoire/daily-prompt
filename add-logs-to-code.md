@@ -1,7 +1,7 @@
 # Add log to a codebase
 
 This prompt is designed to help you add logging to a codebase.
-Verry often you need to add logs to a codebase to help with debugging or monitoring.
+Very often you need to add logs to a codebase to help with debugging or monitoring.
 Instead of searching for the right place to add logs, you can use this prompt to generate the code for you, saving you time and effort.
 
 
