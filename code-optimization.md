@@ -22,36 +22,38 @@ Improved structure and comments
 
 Use clear validable names, explicit steps and avoids one-liners for better readability.
 
-  test(`Deactivate a Data Product with data product copy id`, async () => {
-    await createDefaultDataProductAndActivateForTest();
+  test(`Deactivate a Item`, async () => {
+    await createDefaulItemAndActivateIt();
 
     // Deactivation
-    const resultDeactivation = await agent.post(Endpoints.DATA_PRODUCT.deactivateDataProduct(dataProduct.copy.id));
+    const resultDeactivation = await agent.post(Endpoints.ITEMS.deactivateItem(item.copy.id));
     expect(resultDeactivation).toHaveStatus(200);
 
-    const resultGetMain = await getDataProductById(agent, dataProduct.main.id);
+    const resultGetMain = await getItemtById(agent, item.main.id);
     expect(resultGetMain.activated).toEqual(false);
-    const resultGetCopy = await getDataProductById(agent, dataProduct.copy.id);
+    const resultGetCopy = await getItemById(agent, item.copy.id);
     expect(resultGetCopy).toBeNull();
   });
 ```
 
 Result:
-test('Deactivate a Data Product using its copy ID', async () => {
-  // Step 1: Create and activate a default data product for testing
-  await createDefaultDataProductAndActivateForTest();
+```markdown
+test('Deactivate an Item', async () => {
+  // Step 1: Create and activate a default item for testing
+  await createDefaulItemAndActivateIt();
 
-  // Step 2: Deactivate the data product using the copy's ID
+  // Step 2: Deactivate the item using the copy's ID
   const deactivationResponse = await agent.post(
-    Endpoints.DATA_PRODUCT.deactivateDataProduct(dataProduct.copy.id)
+    Endpoints.ITEMS.deactivateItem(item.copy.id)
   );
   expect(deactivationResponse).toHaveStatus(200);
 
-  // Step 3: Retrieve the main data product and verify it is deactivated
-  const mainDataProduct = await getDataProductById(agent, dataProduct.main.id);
-  expect(mainDataProduct.activated).toEqual(false);
+  // Step 3: Retrieve the main item and verify it is deactivated
+  const mainItem = await getItemtById(agent, item.main.id);
+  expect(mainItem.activated).toEqual(false);
 
-  // Step 4: Attempt to retrieve the copy data product and verify it no longer exists
-  const copyDataProduct = await getDataProductById(agent, dataProduct.copy.id);
-  expect(copyDataProduct).toBeNull();
+  // Step 4: Attempt to retrieve the copy item and verify it no longer exists
+  const copyItem = await getItemById(agent, item.copy.id);
+  expect(copyItem).toBeNull();
 });
+```
