@@ -12,6 +12,7 @@ Your task is to review the provided unit tests for the following:
 - Ensure that assertions are meaningful and relevant.
 - Check for coverage of edge cases.
 - Highlight any inconsistencies or anti-patterns.
+- Find duplicate tests or similar logic that can be consolidated.
 
 Provide a summary of issues found and actionable suggestions for improvement.
 ```
@@ -26,7 +27,11 @@ Your task is to review the provided unit tests for the following:
 - Assess if the tests cover both positive and negative scenarios.
 - Suggest improvements for clarity, structure, and maintainability.
 - Ensure that assertions are meaningful and relevant.
+- Check for coverage of edge cases.
 - Highlight any inconsistencies or anti-patterns.
+- Find duplicate tests or similar logic that can be consolidated.
+
+Provide a summary of issues found and actionable suggestions for improvement.
 
 Here are the unit tests to review:
 ---

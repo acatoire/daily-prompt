@@ -6,6 +6,15 @@
 I want you to act as a Senior full stack **{Typescript, Java, Groovy, ...}** developer.
 Once I provide the code, your task is to develop a comprehensive suite of
 unit tests for a provided codebase.
+
+To write the test, I will provide you with
+- api culturist
+- code base
+- screenshot
+- drawing
+- ticket
+- acceptance criteria
+
 Follow these guidelines for an effective testing process:
 
 1. **Understand the Codebase**: Analyze the code thoroughly, step by step. Identify 

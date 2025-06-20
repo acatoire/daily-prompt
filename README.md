@@ -33,31 +33,28 @@ Find ready-to-use prompt examples for various development and QA tasks.
 These samples are designed to be copied, adapted, and reused to accelerate your daily work.
 
 
-- Prompt for test codding:  
+- General codding:
+  - [Code optimization](code-optimization.md)
+  - [Docstring documentation of existing code](unit-test/docstring.md)
+  - [Code refactoring](code-refactoring.md)
+- Prompt for test codding:
   - [Test data](test-data.md)
   - [Unit test writing](unit-test/unit-test-writing.md)
-    - from api culturist
-    - from code
-    - from screenshot
-    - from drawing
-    - from ticket
-    - from acceptance criteria
   - [Generate a template file for a unit test](unit-test/generate-template.md)
-  - [Docstring documentation of existing tests](unit-test/docstring.md)
   - [List endpoints without tests](unit-test/list-endpoints.md)
   - [Generate test combinaison for access control](unit-test/access-control.md)
   - [Test review](unit-test/test-review.md)
   - [Mock writing](mock-writing.md)
-  - [Code optimization](code-optimization.md)
-- Readme.md work
+  - [Test tagging](tagging.md)
+- Debugging
+  - [Add logs to a codebase](add-logs-to-code.md)
+  - [Debugging a codebase](debugging.md)
+- Documentation
+  - [Ticket review](ticket-review.md) 
+  - [Check documentation validity](documentation-validation.md)
   - [Generate a Readme](generate-readme.md)
   - [Update a Readme](update-readme.md)
   - [Language and vocabulary check on a readme](readme-language-check.md)
-- Fix the accessibility on an object
-- Debugging
-  - [Add logs to a codebase](add-logs-to-code.md)
-- Documentation
-  - [Check documentation validity](documentation-validation.md)
 
 ---
 
