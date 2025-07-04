@@ -1,0 +1,223 @@
+{
+  "id": "7a7994bc-6061-45f6-b2ee-acad4a98e859",
+  "name": "Prompt Library and AI Helper for QA and developer teams",
+  "description": "Welcome to the Prompt Library and AI Helper!\nThis Glossary is designed as an almanac and productivity booster for developer and QA teams.\nOur goal is to provide a curated collection of reusable prompt samples and practical AI usage guidelines to help you save time and improve your workflow.\n\nIMPORTANT: Always review AI-generated content before using it in production.",
+  "overview": "[{\"type\":\"paragraph\",\"children\":[{\"text\":\"\"}]}]",
+  "tags": [
+    "QA",
+    "prompt",
+    "Hackathon"
+  ],
+  "ownerId": "65a7eab64aa666fe660e227c",
+  "createdBy": "65a7eab64aa666fe660e227c",
+  "createdAt": "2025-06-30T16:29:39Z",
+  "updatedBy": "6862bc0232ddd0130a954ce0",
+  "updatedAt": "2025-07-04T12:41:31Z",
+  "terms": [
+    {
+      "id": "3bd83fdf-08b6-4936-bb78-ded18842e178",
+      "qlikId": "556fe5d0-599e-4feb-aeaf-978e584d93d2",
+      "name": "Code optimization",
+      "description": "You are an AI assistant specialized in software development.\nYour task is to rewrite this function/file to made it more readable and clear for users.\nImproved structure and comments\nUse clear valid names, explicit steps and avoids one-liners for better readability.",
+      "relatedInformation": "[{\"type\":\"paragraph\",\"children\":[{\"text\":\"  test(`Deactivate a Item`, async () => {\"}]},{\"type\":\"paragraph\",\"children\":[{\"text\":\"    await createDefaulItemAndActivateIt();\"}]},{\"type\":\"paragraph\",\"children\":[{\"text\":\"\"}]},{\"type\":\"paragraph\",\"children\":[{\"text\":\"    // Deactivation\"}]},{\"type\":\"paragraph\",\"children\":[{\"text\":\"    const resultDeactivation = await agent.post(Endpoints.ITEMS.deactivateItem(item.copy.id));\"}]},{\"type\":\"paragraph\",\"children\":[{\"text\":\"    expect(resultDeactivation).toHaveStatus(200);\"}]},{\"type\":\"paragraph\",\"children\":[{\"text\":\"\"}]},{\"type\":\"paragraph\",\"children\":[{\"text\":\"    const resultGetMain = await getItemtById(agent, item.main.id);\"}]},{\"type\":\"paragraph\",\"children\":[{\"text\":\"    expect(resultGetMain.activated).toEqual(false);\"}]},{\"type\":\"paragraph\",\"children\":[{\"text\":\"    const resultGetCopy = await getItemById(agent, item.copy.id);\"}]},{\"type\":\"paragraph\",\"children\":[{\"text\":\"    expect(resultGetCopy).toBeNull();\"}]},{\"type\":\"paragraph\",\"children\":[{\"text\":\"  });\"}]},{\"type\":\"paragraph\",\"children\":[{\"text\":\"\"}]},{\"type\":\"paragraph\",\"children\":[{\"text\":\"Result:\"}]},{\"type\":\"paragraph\",\"children\":[{\"text\":\"\"}]},{\"type\":\"paragraph\",\"children\":[{\"text\":\"test('Deactivate an Item', async () => {\"}]},{\"type\":\"paragraph\",\"children\":[{\"text\":\"  // Step 1: Create and activate a default item for testing\"}]},{\"type\":\"paragraph\",\"children\":[{\"text\":\"  await createDefaulItemAndActivateIt();\"}]},{\"type\":\"paragraph\",\"children\":[{\"text\":\"\"}]},{\"type\":\"paragraph\",\"children\":[{\"text\":\"  // Step 2: Deactivate the item using the copy's ID\"}]},{\"type\":\"paragraph\",\"children\":[{\"text\":\"  const deactivationResponse = await agent.post(\"}]},{\"type\":\"paragraph\",\"children\":[{\"text\":\"    Endpoints.ITEMS.deactivateItem(item.copy.id)\"}]},{\"type\":\"paragraph\",\"children\":[{\"text\":\"  );\"}]},{\"type\":\"paragraph\",\"children\":[{\"text\":\"  expect(deactivationResponse).toHaveStatus(200);\"}]},{\"type\":\"paragraph\",\"children\":[{\"text\":\"\"}]},{\"type\":\"paragraph\",\"children\":[{\"text\":\"  // Step 3: Retrieve the main item and verify it is deactivated\"}]},{\"type\":\"paragraph\",\"children\":[{\"text\":\"  const mainItem = await getItemtById(agent, item.main.id);\"}]},{\"type\":\"paragraph\",\"children\":[{\"text\":\"  expect(mainItem.activated).toEqual(false);\"}]},{\"type\":\"paragraph\",\"children\":[{\"text\":\"\"}]},{\"type\":\"paragraph\",\"children\":[{\"text\":\"  // Step 4: Attempt to retrieve the copy item and verify it no longer exists\"}]},{\"type\":\"paragraph\",\"children\":[{\"text\":\"  const copyItem = await getItemById(agent, item.copy.id);\"}]},{\"type\":\"paragraph\",\"children\":[{\"text\":\"  expect(copyItem).toBeNull();\"}]},{\"type\":\"paragraph\",\"children\":[{\"text\":\"});\"}]}]",
+      "abbreviation": "",
+      "status": "verified",
+      "statusUpdatedAt": "2025-06-30T16:29:56Z",
+      "statusUpdatedBy": "65a7eab64aa666fe660e227c",
+      "tags": [],
+      "stewards": [
+        {
+          "userId": "65a7eab64aa666fe660e227c",
+          "email": "maud.bartlett@qlik.com",
+          "name": "Maud Bartlett"
+        }
+      ],
+      "stewardDetails": [
+        {
+          "userId": "65a7eab64aa666fe660e227c",
+          "email": "maud.bartlett@qlik.com",
+          "name": "Maud Bartlett"
+        }
+      ],
+      "categories": [
+        "a7d07bc2-b40d-4225-9277-f245c94c7855"
+      ],
+      "createdBy": "65a7eab64aa666fe660e227c",
+      "createdAt": "2025-06-30T16:29:39Z",
+      "updatedBy": "6862bc0232ddd0130a954ce0",
+      "updatedAt": "2025-07-04T12:39:11Z"
+    },
+    {
+      "id": "c7f2e1b2-9e2a-4b6a-8e7e-123456789abc",
+      "qlikId": "24bfed47-f805-4ef8-8387-35e221a7a52f",
+      "name": "Code refactoring",
+      "description": "You are an AI assistant specialized in software development and code quality.\nYour task is to refactor the provided code by:\n\n- Renaming variables to improve clarity and follow naming conventions.\n- Checking if variable names accurately reflect their purpose and usage.\n- Suggesting better names where appropriate.\n- Ensuring consistency and readability throughout the code.\n\nReturn the refactored code and a brief explanation of the changes.\nDo not change the logic of the code, only the refactoring.",
+      "relatedInformation": "",
+      "abbreviation": "",
+      "status": "draft",
+      "statusUpdatedAt": "2025-07-04T12:39:10Z",
+      "statusUpdatedBy": "6862bc0232ddd0130a954ce0",
+      "tags": [],
+      "stewards": [
+        {
+          "userId": "65a7eab64aa666fe660e227c",
+          "email": "maud.bartlett@qlik.com",
+          "name": "Maud Bartlett"
+        }
+      ],
+      "stewardDetails": [
+        {
+          "userId": "65a7eab64aa666fe660e227c",
+          "email": "maud.bartlett@qlik.com",
+          "name": "Maud Bartlett"
+        }
+      ],
+      "categories": [
+        "a7d07bc2-b40d-4225-9277-f245c94c7855"
+      ],
+      "createdBy": "6862bc0232ddd0130a954ce0",
+      "createdAt": "2025-07-04T12:39:10Z",
+      "updatedBy": "6862bc0232ddd0130a954ce0",
+      "updatedAt": "2025-07-04T12:39:10Z"
+    },
+    {
+      "id": "881922a4-c674-43c9-8617-f7a842b360eb",
+      "qlikId": "7a25eb14-4c32-4886-9375-542f337c989e",
+      "name": "Docstring documentation of existing code",
+      "description": "Docstring Code Completion and Check\nThe prompt\n\nYou are an AI assistant specialized in software development and documentation.\nYour task is to:\n\n- Complete missing or incomplete docstrings for the provided code.\n- Check that all docstrings accurately describe the function, parameters, and return values.\n- Ensure docstrings follow the project's style guide (e.g., Google, NumPy, or reStructuredText).\n- Suggest improvements for clarity, completeness, and consistency.\n\nReturn the updated code with improved docstrings and a summary of changes.",
+      "relatedInformation": "",
+      "abbreviation": "",
+      "status": "draft",
+      "statusUpdatedAt": "2025-06-30T16:29:39Z",
+      "statusUpdatedBy": "65a7eab64aa666fe660e227c",
+      "tags": [],
+      "stewards": [
+        {
+          "userId": "65a7eab64aa666fe660e227c",
+          "email": "maud.bartlett@qlik.com",
+          "name": "Maud Bartlett"
+        }
+      ],
+      "stewardDetails": [
+        {
+          "userId": "65a7eab64aa666fe660e227c",
+          "email": "maud.bartlett@qlik.com",
+          "name": "Maud Bartlett"
+        }
+      ],
+      "categories": [
+        "a7d07bc2-b40d-4225-9277-f245c94c7855"
+      ],
+      "createdBy": "65a7eab64aa666fe660e227c",
+      "createdAt": "2025-06-30T16:29:39Z",
+      "updatedBy": "6862bc0232ddd0130a954ce0",
+      "updatedAt": "2025-07-04T12:39:11Z"
+    },
+    {
+      "id": "b2e1a9c4-7e2d-4e7a-9a1c-1e2f3d4c5b6a",
+      "qlikId": "e3f4a5b6-c7d8-4e9f-8a1b-2c3d4e5f6a7b",
+      "name": "Code generation: Playwright page methods",
+      "description": "You are an AI assistant specialized in software development.\nYour task is to write all the methods for the existing locators.\n\n- Create a method to click on a button when the locator name includes \"button\".\n- Create methods to fill and check the value when the locator name includes \"input\".\n- Create methods to activate the switch and check its status when the locator name includes \"switch\".\n- Create methods to click on a radio button and check its status when the locator name includes \"radio\".\n- Create methods to click on a check box and check its status when the locator name includes \"checkBox\".\n- Create a method that displays the tooltip by mouse hover and checks its label when the locator contains \"tooltips\".\n\nFor each method, add a log using the function fLog.stepName(), including the name of the class and the action of the method.\nUse clear valid names, explicit steps and avoid one-liners for better readability.",
+      "relatedInformation": "[{\"type\":\"paragraph\",\"children\":[{\"text\":\"Example\"}]},{\"type\":\"code-block\",\"language\":\"markdown\",\"children\":[{\"text\":\"You are an AI assistant specialized in software development.\\nYour task is to write all the methods for the existing locators.\\n\\nCreate a method to click on a button when the locator name includes \\\"button\\\".\\n\\nCreate methods to fill and check the value when the locator name includes \\\"input\\\".\\n\\nCreate methods to activate the switch and check its status when the locator name includes \\\"switch\\\".\\n\\nCreate methods to click on a radio button and check its status when the locator name includes \\\"radio\\\".\\n\\nCreate methods to click on a check box and check its status when the locator name includes \\\"checkBox\\\".\\n\\nCreate a method that display the toolip by mouse hover and check it's label when the localor contains \\\"tooltips\\\"\\n\\nFor each method, add a log using the function fLog.stepName(), including the name of the class and the action of the method.\\n\\nUse clear validable names, explicit steps and avoids one-liners for better readability.\\n\\nexport class ItemsCreate extends Bass {\\nprivate readonly itemSwitch = this.layout.getByTestId(\\\"item.modal.switch\\\");\\n\\nprivate readonly openItemCheckbox = this.layout.getByTestId(\\\"item.modal.open-item.checkbox\\\");\\n\\nprivate readonly itemRadioButton = this.layout.getByTestId(\\\"items.modal.item.radio\\\");\\nprivate readonly itemInput = this.layout.locator(\\\"id=items.modal.item\\\");\\nprivate readonly createButton = this.layout.getByTestId(\\\"items.modal.create.button\\\");\\nprivate readonly cancelButton = this.layout.getByTestId(\\\"modal.buttons.close\\\");\\n}\\n\"}]},{\"type\":\"paragraph\",\"children\":[{\"text\":\"Result:\"}]},{\"type\":\"code-block\",\"language\":\"markdown\",\"children\":[{\"text\":\"export class ItemsCreate extends Bass {\\n  private readonly layout = this.page.getByTestId(\\\"modal\\\");\\n  private readonly itemSwitch = this.layout.getByTestId(\\\"item.modal.switch\\\");\\n  private readonly openItemCheckbox = this.layout.getByTestId(\\\"item.modal.open-item.checkbox\\\");\\n  private readonly itemRadioButton = this.layout.getByTestId(\\\"items.modal.item.radio\\\");\\n  private readonly itemInput = this.layout.locator(\\\"id=items.modal.item\\\");\\n  private readonly createButton = this.layout.getByTestId(\\\"items.modal.create.button\\\");\\n  private readonly cancelButton = this.layout.getByTestId(\\\"modal.buttons.close\\\");\\n  private readonly itemTooltipLabel = this.layout.getByTestId(\\\"modal.tooltip.label\\\");\\n  private readonly itemTooltip = this.layout.getByTestId(\\\"modal.tooltip\\\");\\n\\n  // --- Methods for itemSwitch ---\\n  async activateItemSwitch() {\\n    fLog.stepName(\\\"ItemsCreate - Activating itemSwitch\\\");\\n    if (!(await this.itemSwitch.isChecked())) {\\n      await this.itemSwitch.click();\\n    }\\n  }\\n\\n  async isItemSwitchChecked(expected: boolean) {\\n    fLog.stepName(`ItemsCreate - Checking itemSwitch is checked: ${expected}`);\\n    if (expected) {\\n      await expect(this.itemSwitch).toBeChecked();\\n    } else {\\n      await expect(this.itemSwitch).not.toBeChecked();\\n    }\\n  }\\n\\n  // --- Methods for openItemCheckbox ---\\n  async clickOpenItemCheckbox() {\\n    fLog.stepName(\\\"ItemsCreate - Clicking openItemCheckbox\\\");\\n    await this.openItemCheckbox.click();\\n  }\\n\\n  async isOpenItemCheckboxChecked(expected: boolean) {\\n    fLog.stepName(`ItemsCreate - Checking openItemCheckbox is checked: ${expected}`);\\n    const checked = await this.openItemCheckbox.getAttribute(\\\"aria-checked\\\");\\n    expect(checked).toBe(expected.toString());\\n  }\\n\\n  // --- Methods for itemRadioButton ---\\n  async clickItemRadioButton() {\\n    fLog.stepName(\\\"ItemsCreate - Clicking itemRadioButton\\\");\\n    await this.itemRadioButton.click();\\n  }\\n\\n  async isItemRadioButtonChecked(expected: boolean) {\\n    fLog.stepName(`ItemsCreate - Checking itemRadioButton is checked: ${expected}`);\\n    if (expected) {\\n      await expect(this.itemRadioButton).toBeChecked();\\n    } else {\\n      await expect(this.itemRadioButton).not.toBeChecked();\\n    }\\n  }\\n\\n  // --- Methods for itemInput ---\\n  async fillItemInput(value: string) {\\n    fLog.stepName(`ItemsCreate - Filling itemInput with value: ${value}`);\\n    await this.itemInput.fill(value);\\n  }\\n\\n  async itemInputValueIs(expected: string) {\\n    fLog.stepName(`ItemsCreate - Checking itemInput value is: ${expected}`);\\n    await expect(this.itemInput).toHaveValue(expected);\\n  }\\n\\n  // --- Methods for createButton ---\\n  async clickCreateButton() {\\n    fLog.stepName(\\\"ItemsCreate - Clicking createButton\\\");\\n    await this.createButton.click();\\n  }\\n\\n  // --- Methods for cancelButton ---\\n  async clickCancelButton() {\\n    fLog.stepName(\\\"ItemsCreate - Clicking cancelButton\\\");\\n    await this.cancelButton.click();\\n  }\\n\\n  async showItemTooltipAndCheckLabel(expected: string) {\\n    fLog.stepName(\\\"ItemsCreate - Displaying tooltip and checking label\\\");\\n    await this.itemTooltip.hover();\\n    await expect(this.itemTooltipLabel).toHaveText(expected);\\n  }\\n}\\n\"}]}]",
+      "abbreviation": "",
+      "status": "draft",
+      "statusUpdatedAt": "2025-07-04T13:00:00Z",
+      "statusUpdatedBy": "6862bc0232ddd0130a954ce0",
+      "tags": [],
+      "stewards": [
+        {
+          "userId": "65a7eab64aa666fe660e227c",
+          "email": "maud.bartlett@qlik.com",
+          "name": "Maud Bartlett"
+        }
+      ],
+      "stewardDetails": [
+        {
+          "userId": "65a7eab64aa666fe660e227c",
+          "email": "maud.bartlett@qlik.com",
+          "name": "Maud Bartlett"
+        }
+      ],
+      "categories": [
+        "70fc7fb2-236f-4402-bd10-b087826c7d72"
+      ],
+      "createdBy": "6862bc0232ddd0130a954ce0",
+      "createdAt": "2025-07-04T13:00:00Z",
+      "updatedBy": "6862bc0232ddd0130a954ce0",
+      "updatedAt": "2025-07-04T13:00:00Z"
+    }
+  ],
+  "categories": [
+    {
+      "id": "ed4add41-a8d6-46f7-8028-009750872fbe",
+      "qlikId": "ed4add41-a8d6-46f7-8028-009750872fbe",
+      "name": "Debugging",
+      "description": "",
+      "stewardDetails": [
+        {
+          "userId": "6862bc0232ddd0130a954ce0",
+          "email": "axel.catoire@qlik.com",
+          "name": "Axel Catoire"
+        }
+      ],
+      "createdBy": "6862bc0232ddd0130a954ce0",
+      "createdAt": "2025-07-04T12:40:59Z",
+      "updatedBy": "6862bc0232ddd0130a954ce0",
+      "updatedAt": "2025-07-04T12:40:59Z"
+    },
+    {
+      "id": "0139141d-634b-4da3-b2aa-e3f43a4ec19a",
+      "qlikId": "0139141d-634b-4da3-b2aa-e3f43a4ec19a",
+      "name": "Documentation",
+      "description": "",
+      "stewardDetails": [
+        {
+          "userId": "6862bc0232ddd0130a954ce0",
+          "email": "axel.catoire@qlik.com",
+          "name": "Axel Catoire"
+        }
+      ],
+      "createdBy": "6862bc0232ddd0130a954ce0",
+      "createdAt": "2025-07-04T12:40:50Z",
+      "updatedBy": "6862bc0232ddd0130a954ce0",
+      "updatedAt": "2025-07-04T12:40:50Z"
+    },
+    {
+      "id": "a7d07bc2-b40d-4225-9277-f245c94c7855",
+      "qlikId": "b598bbc7-4188-4c73-a1c6-aa4863062ecf",
+      "name": "General codding",
+      "description": "",
+      "stewardDetails": [
+        {
+          "userId": "65a7eab64aa666fe660e227c",
+          "email": "maud.bartlett@qlik.com",
+          "name": "Maud Bartlett"
+        }
+      ],
+      "createdBy": "65a7eab64aa666fe660e227c",
+      "createdAt": "2025-06-30T16:29:39Z",
+      "updatedBy": "6862bc0232ddd0130a954ce0",
+      "updatedAt": "2025-07-04T12:39:11Z"
+    },
+    {
+      "id": "70fc7fb2-236f-4402-bd10-b087826c7d72",
+      "qlikId": "70fc7fb2-236f-4402-bd10-b087826c7d72",
+      "name": "Test codding",
+      "description": "",
+      "stewardDetails": [
+        {
+          "userId": "6862bc0232ddd0130a954ce0",
+          "email": "axel.catoire@qlik.com",
+          "name": "Axel Catoire"
+        }
+      ],
+      "createdBy": "6862bc0232ddd0130a954ce0",
+      "createdAt": "2025-07-04T12:41:31Z",
+      "updatedBy": "6862bc0232ddd0130a954ce0",
+      "updatedAt": "2025-07-04T12:41:31Z"
+    }
+  ],
+  "termTemplate": {
+    "relatedInformation": "[{\"type\":\"paragraph\",\"children\":[{\"text\":\"\"}]}]"
+  }
+}
