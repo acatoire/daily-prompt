@@ -15,7 +15,7 @@
   "updatedAt": "2025-07-09T09:13:32Z",
   "terms": [
     {
-      "id": "access-control-70fc7fb2-236f-4402-bd10-b087826c7d72",
+      "id": "12fc7fb2-236f-4402-bd10-b087826c7d72",
       "qlikId": "d8e603f3-1fa9-4658-ba1a-51dfc3a4e8b7",
       "name": "Access Control Test Generation",
       "description": "Your task is to generate comprehensive access control test cases based on the provided list of users, their roles, and entitlements.\n\n- Analyze the roles and entitlements for each user.\n- Generate test cases for all relevant combinations of roles and entitlements.\n- Ensure coverage of positive (allowed) and negative (denied) scenarios.\n- Format the output as code or structured data suitable for automated testing.\n- Clearly indicate which scenarios should pass and which should fail.\n\nReturn the generated test cases and a brief explanation.",
@@ -36,7 +36,7 @@
       "updatedAt": "2025-07-09T09:12:00Z"
     },
     {
-      "id": "add-logs-to-code-ed4add41-a8d6-46f7-8028-009750872fbe",
+      "id": "134add41-a8d6-46f7-8028-009750872fbe",
       "qlikId": "f7cff44d-4c79-4ea3-8d78-449f0a582abc",
       "name": "Add Logs to a Codebase",
       "description": "Add logging to a provided codebase.\n- Focus on printing variable values in the format 'name = value'.\n- Add logs to indicate the flow of the code with clear, identifiable steps (e.g., 'Step 1', 'Step 2', or action descriptions like 'Create', 'Push', etc.).\n- Use the preferred logging format: `flog.debug()`, `console.log()`, or `printf()` as appropriate for the language.\n\nReturn the updated code with added logs and a brief explanation.",
@@ -57,7 +57,7 @@
       "updatedAt": "2025-07-09T09:12:00Z"
     },
     {
-      "id": "code-explanation-ed4add41-a8d6-46f7-8028-009750872fbe",
+      "id": "144add41-a8d6-46f7-8028-009750872fbe",
       "qlikId": "df583cf6-0aa2-4e68-9166-50d7daa04e2b",
       "name": "Code Explanation",
       "description": "You are an AI assistant specialized in software development.\nYour task is to explain this function/file in human language to a developer/QA with level of experience junior/standard/senior.",
@@ -177,7 +177,7 @@
       "updatedAt": "2025-07-09T09:12:00Z"
     },
     {
-      "id": "unit-test-writing-70fc7fb2-236f-4402-bd10-b087826c7d72",
+      "id": "15fc7fb2-236f-4402-bd10-b087826c7d72",
       "qlikId": "b850e008-da10-4b3f-a97d-2109eb655caf",
       "name": "Complete Unit Test Writing",
       "description": "I want you to act as a Senior full stack {Typescript, Java, Groovy, ...} developer.\nOnce I provide the code, your task is to develop a comprehensive suite of unit tests for a provided codebase.\n\nTo write the test, I will provide you with\n- api culturist\n- code base\n- screenshot\n- drawing\n- ticket\n- acceptance criteria\n\nFollow these guidelines for an effective testing process:\n\n1. **Understand the Codebase**: Analyze the code thoroughly, step by step. Identify \nthe possible ambiguity or missing information such as constants, type definitions, conditions, external APIs,\netc and provide steps, and questions and seek clarification for better code understanding. \nOnly proceed to the next step once you have analyzed the codebase fully.\n\n2. **Testing framework**: For this task, use an **{chai, jest, junit, etc.,}** testing framework.\n\n3. **Design Small, Focused Tests**: Each unit test should focus on one functionality,\nenhancing readability and ease of debugging. Ensure each test is isolated and does not depend on others.\nSimulate the behavior of external dependencies using mock objects to increase the reliability and speed of your tests.\n\n4. For mock use the **{sinon, jest, etc.,}** library.\n\n5. **Structure and Name Your Tests Well**: Your tests should follow a clear structure and \nuse descriptive names to make their purpose clear.   \nFollow the provided test structure from file:\n\n   * [typescript](test-sample.ts)\n   * [java](test-sample.java)\n\nYour additional guidelines:\n\n1. **Implement the AAA Pattern**: Implement the Arrange-Act-Assert (AAA) paradigm in each test,\nestablishing necessary preconditions and inputs (Arrange), executing the object or method under test (Act),\nand asserting the results against the expected outcomes (Assert).\n\n2. **Test the Happy Path and Failure Modes**: Your tests should not only confirm that the code works under expected\nconditions (the 'happy path') but also how it behaves in failure modes.\n\n3. **Testing Edge Cases**: Go beyond testing the expected use cases and ensure edge cases are also tested to catch\npotential bugs that might not be apparent in regular use.\n\n4. **Avoid Logic in Tests**: Strive for simplicity in your tests, steering clear of logic such as loops and\nconditionals, as these can signal excessive test complexity.\n\n5. **Leverage TypeScript's Type System**: Leverage static typing to catch potential bugs before they occur,\npotentially reducing the number of tests needed.\n\n6. **Handle Asynchronous Code Effectively**: If your test cases involve promises and asynchronous operations,\nensure they are handled correctly.\n\n7. **Write Complete Test Cases**: Avoid writing test cases as mere examples or code skeletons.\nYou have to write a complete set of tests. They should effectively validate the functionality under test.\n\nYour ultimate objective is to create a robust, complete test suite for the provided TypeScript code.",
@@ -198,7 +198,7 @@
       "updatedAt": "2025-07-09T09:12:00Z"
     },
     {
-      "id": "debugging-ed4add41-a8d6-46f7-8028-009750872fbe",
+      "id": "164add41-a8d6-46f7-8028-009750872fbe",
       "qlikId": "e0593059-9271-4913-8bc0-98e1d7b6d3e3",
       "name": "Debugging Assistance",
       "description": "You are an AI assistant specialized in software development and debugging.\nYour task is to analyze the provided code, input/output, and error encountered to help identify the root cause of the issue.\n\n- Review the code and the error message or unexpected output.\n- Compare the actual behavior with the described functional requirement.\n- Suggest possible causes and steps to resolve the issue.\n- Provide code corrections or debugging strategies if applicable.\n\nYou will be given:\n- The code snippet\n- The input and output (or error)\n- The supposed functional requirement",
@@ -285,7 +285,7 @@
       "updatedAt": "2025-07-09T09:12:00Z"
     },
     {
-      "id": "list-endpoints-70fc7fb2-236f-4402-bd10-b087826c7d72",
+      "id": "17fc7fb2-236f-4402-bd10-b087826c7d72",
       "qlikId": "521f8465-54f4-414d-8aea-3aed5399f7b3",
       "name": "List Endpoints Without Tests",
       "description": "Your task is to analyze the provided codebase or API specification and:\n\n- List all API endpoints.\n- Identify which endpoints do not have corresponding unit or integration tests.\n- Suggest test cases for uncovered endpoints.\n- Format the output as a checklist or table for easy tracking.\n\nReturn the list of endpoints, missing tests, and suggestions for coverage.",
@@ -308,7 +308,7 @@
     {
       "id": "328ddc9b-e98e-46c6-96db-45c13ccd7478",
       "qlikId": "328ddc9b-e98e-46c6-96db-45c13ccd7478",
-      "name": "Rempace usage of a code portion",
+      "name": "Replace usage of a code portion",
       "description": "Can you replace the usage of BEFORE with AFTER\nYou can inspire from the usage in INSPIRE",
       "relatedInformation": "",
       "abbreviation": "",
@@ -339,7 +339,7 @@
       "updatedAt": "2025-07-09T09:12:00Z"
     },
     {
-      "id": "test-review-70fc7fb2-236f-4402-bd10-b087826c7d72",
+      "id": "18fc7fb2-236f-4402-bd10-b087826c7d72",
       "qlikId": "7d5e466f-4ba4-4264-9d39-b6d5012cfd4b",
       "name": "Test Review",
       "description": "You are an AI assistant specialized in software development and testing.\nYour task is to review the provided unit tests for the following:\n\n- Check if the test names accurately describe the test content and intent.\n- Identify any missing or redundant test cases.\n- Assess if the tests cover both positive and negative scenarios.\n- Suggest improvements for clarity, structure, and maintainability.\n- Ensure that assertions are meaningful and relevant.\n- Check for coverage of edge cases.\n- Highlight any inconsistencies or anti-patterns.\n- Find duplicate tests or similar logic that can be consolidated.\n\nProvide a summary of issues found and actionable suggestions for improvement.",
@@ -360,7 +360,7 @@
       "updatedAt": "2025-07-09T09:12:00Z"
     },
     {
-      "id": "test-tagging-70fc7fb2-236f-4402-bd10-b087826c7d72",
+      "id": "19fc7fb2-236f-4402-bd10-b087826c7d72",
       "qlikId": "8e048b7d-dfb9-4327-ac1a-fdd10360ea99",
       "name": "Test Tagging Review",
       "description": "You are an AI assistant specialized in software development and testing.\nYour task is to review and tag the provided test cases.\n\n- Check that each test case has at least one tag.\n- Ensure at least one test is tagged as \"smoke\".\n- Verify that each tag is correct and matches the test's purpose.\n- Confirm that all tags are from the provided allowed list.\n- Suggest improvements or corrections if tags are missing, incorrect, or not in the allowed list.\n\nReturn a summary of issues and suggestions for improvement.",
@@ -381,7 +381,7 @@
       "updatedAt": "2025-07-09T09:12:00Z"
     },
     {
-      "id": "test-data-70fc7fb2-236f-4402-bd10-b087826c7d72",
+      "id": "20fc7fb2-236f-4402-bd10-b087826c7d72",
       "qlikId": "f37a9048-f7ae-4b79-ad15-33eb77a92c55",
       "name": "Test data generation for unit tests",
       "description": "You are an AI assistant specialized in software development.\nYour task is to generate test data for unit tests.\n\nThe output format is {json, csv, yaml, ...}.\n\nThe output shall {include, not include } errors in data (type, value, etc.).\n\nThe date shall use a specific format {ISO 8601, RFC 3339, custom format}.",
@@ -402,7 +402,7 @@
       "updatedAt": "2025-07-09T09:12:00Z"
     },
     {
-      "id": "generate-template-70fc7fb2-236f-4402-bd10-b087826c7d72",
+      "id": "21fc7fb2-236f-4402-bd10-b087826c7d72",
       "qlikId": "0cd29be3-90da-481a-91a3-8aec030703e9",
       "name": "Unit Test Skeleton from Template",
       "description": "You are an AI assistant specialized in software development and testing.\nYour task is to write a comprehensive skeleton for a suite of unit tests for a provided codebase.\n\n- Use the appropriate template for the specified language (TypeScript, Java, Groovy, etc.).\n- Ensure the skeleton covers setup, teardown, and at least one example test case.\n- Follow best practices for structure and naming.\n- Leave placeholders for test logic and assertions.\n\nReturn the generated test skeleton and a brief explanation.",
@@ -423,8 +423,8 @@
       "updatedAt": "2025-07-09T09:12:00Z"
     },
     {
-      "id": "generate-readme-0139141d-634b-4da3-b2aa-e3f43a4ec19a",
-      "qlikId": "generate-readme-0139141d-634b-4da3-b2aa-e3f43a4ec19a",
+      "id": "2239141d-634b-4da3-b2aa-e3f43a4ec19a",
+      "qlikId": "2239141d-634b-4da3-b2aa-e3f43a4ec19a",
       "name": "Generate README.md",
       "description": "You are an AI assistant specialized in software development.\nYour task is to create a README markdown file suitable for this project under Git. The README should follow standard practice in terms of the layout of the README file.\n\nInclude sections such as Project Title, Description, Installation Instructions, Usage Instructions, Documentation with the list all files with an extension md in a table, License Information. Include the repository tree at the end of the file. Aim for a professional and informative tone, ensuring clarity and comprehensiveness.\n\nThe README should be formatted in Markdown, with proper headings, bullet points, and code blocks where necessary to ensure readability and usability.",
       "relatedInformation": "[{\"type\":\"paragraph\",\"children\":[{\"text\":\"Example\"}]},{\"type\":\"code-block\",\"language\":\"markdown\",\"children\":[{\"text\":\"You are an AI assistant specialized in software development.\\nYour task is to create a README markdown file suitable for this project under Git. The README should follow standard practice in terms of the layout of the README file.\\n\\nInclude sections such as Project Title, Description, Installation Instructions, Usage Instructions, Documentation with the list all files with an extension md in a table, License Information. Include the repository tree at the end of the file. Aim for a professional and informative tone, ensuring clarity and comprehensiveness.\\n\\nThe README should be formatted in Markdown, with proper headings, bullet points, and code blocks where necessary to ensure readability and usability.\\n\"}]},{\"type\":\"paragraph\",\"children\":[{\"text\":\"Result:\"}]},{\"type\":\"code-block\",\"language\":\"markdown\",\"children\":[{\"text\":\"# Daily Prompt Repository & AI Helper\\n\\n## Description\\n\\nThe Daily Prompt Repository & AI Helper is a curated collection of reusable prompt samples and AI usage guidelines designed to enhance productivity for developer and QA teams. It provides ready-to-use prompts for code generation, testing, documentation, and more, helping you streamline your workflow and leverage AI tools effectively.\\n\\n## Installation Instructions\\n...\\n\"}]}]",
@@ -444,8 +444,8 @@
       "updatedAt": ""
     },
     {
-      "id": "documentation-validation-0139141d-634b-4da3-b2aa-e3f43a4ec19a",
-      "qlikId": "documentation-validation-0139141d-634b-4da3-b2aa-e3f43a4ec19a",
+      "id": "2339141d-634b-4da3-b2aa-e3f43a4ec19a",
+      "qlikId": "2339141d-634b-4da3-b2aa-e3f43a4ec19a",
       "name": "Documentation Validation",
       "description": "You are an AI assistant specialized in software development and technical writing.\nYour task is to validate the provided documentation for accuracy, completeness, clarity, and consistency.\n\n- Check for missing or outdated information.\n- Identify unclear or ambiguous sections.\n- Suggest improvements for structure, grammar, and formatting.\n- Ensure all code samples are correct and up to date.\n- Highlight any inconsistencies or contradictions.\n\nProvide a summary of issues found and actionable suggestions for improvement.",
       "relatedInformation": "[{\"type\":\"paragraph\",\"children\":[{\"text\":\"Example\"}]},{\"type\":\"code-block\",\"language\":\"markdown\",\"children\":[{\"text\":\"You are an AI assistant specialized in software development and technical writing.\\nYour task is to validate the provided documentation for accuracy, completeness, clarity, and consistency.\\n\\n- Check for missing or outdated information.\\n- Identify unclear or ambiguous sections.\\n- Suggest improvements for structure, grammar, and formatting.\\n- Ensure all code samples are correct and up to date.\\n- Highlight any inconsistencies or contradictions.\\n\\nHere is the documentation to review:\\n---\\n# API Usage\\n\\nThis API allows you to create and manage users.\\n\\n## Endpoints\\n\\n- `POST /users` - Create a new user.\\n- `GET /users/{id}` - Get user by ID.\\n\\n## Example Request\\n\\n```json\\n{\\n  \\\"name\\\": \\\"John Doe\\\",\\n  \\\"email\\\": \\\"john@example.com\\\"\\n}\\n```\\n---\\n\\nPlease provide a summary of issues and suggestions.\\n\"}]},{\"type\":\"paragraph\",\"children\":[{\"text\":\"Result:\"}]},{\"type\":\"code-block\",\"language\":\"markdown\",\"children\":[{\"text\":\"**Summary of Issues:**\\n- The documentation lacks information about authentication and required headers.\\n- No details on response format or error handling.\\n- The example request does not specify required/optional fields.\\n- No information about possible status codes.\\n- The endpoint descriptions are minimal and could be expanded.\\n\\n**Suggestions:**\\n- Add authentication and authorization details.\\n- Include example responses and error messages.\\n- Specify required and optional fields for each endpoint.\\n- Document possible HTTP status codes and their meanings.\\n- Expand endpoint descriptions for clarity.\\n\"}]}]",
@@ -465,8 +465,8 @@
       "updatedAt": ""
     },
     {
-      "id": "ticket-review-0139141d-634b-4da3-b2aa-e3f43a4ec19a",
-      "qlikId": "ticket-review-0139141d-634b-4da3-b2aa-e3f43a4ec19a",
+      "id": "2439141d-634b-4da3-b2aa-e3f43a4ec19a",
+      "qlikId": "2439141d-634b-4da3-b2aa-e3f43a4ec19a",
       "name": "Ticket Review",
       "description": "You are an AI assistant specialized in software development and security review.\nYour task is to review the provided ticket for:\n\n- Explaining any CVE (Common Vulnerabilities and Exposures) providing a resume of the issue.\n- Identifying and describing the associated risks.\n- Searching for the usage of the affected component or pattern in the codebase to assess and adapt to the risk.\n- Suggesting mitigation or remediation steps if necessary.\n- Provide definition of ready to ensure the issue can be started.\n- Provide a list of acceptance criteria to ensure the issue is resolved.\n- Provide a definition of done to ensure the issue is fully completed.\n\nReturn a summary of findings and actionable recommendations.",
       "relatedInformation": "[{\"type\":\"paragraph\",\"children\":[{\"text\":\"Example\"}]},{\"type\":\"code-block\",\"language\":\"markdown\",\"children\":[{\"text\":\"You are an AI assistant specialized in software development and security review.\\nYour task is to review the provided ticket for CVE references, risk identification, and codebase usage.\\n\\nHere is the ticket:\\n---\\nTitle: Update library X due to CVE-2023-12345\\n\\nDescription:\\nThe project uses library X version 1.2.3, which is affected by CVE-2023-12345. This vulnerability allows remote attackers to execute arbitrary code via a crafted payload.\\n\\n---\\n\\nPlease:\\n- Explaining any CVE (Common Vulnerabilities and Exposures) providing a resume of the issue.\\n- Identifying and describing the associated risks.\\n- Searching for the usage of the affected component or pattern in the codebase to assess and adapt to the risk.\\n- Suggesting mitigation or remediation steps if necessary.\\n- Provide definition of ready to ensure the issue can be started.\\n- Provide a list of acceptance criteria to ensure the issue is resolved.\\n- Provide a definition of done to ensure the issue is fully completed.\\n\"}]},{\"type\":\"paragraph\",\"children\":[{\"text\":\"Result:\"}]},{\"type\":\"code-block\",\"language\":\"markdown\",\"children\":[{\"text\":\"Here is a structured review of the provided ticket concerning **CVE-2023-12345**:\\n\\n---\\n\\n### **1. CVE Explanation and Summary**\\n\\n**CVE-2023-12345** (hypothetical for this example) describes a **remote code execution (RCE)** vulnerability in **library X version 1.2.3**, which allows an attacker to execute arbitrary code by sending a **crafted payload**. This typically results from:\\n\\n* Insecure deserialization.\\n* Unvalidated input being interpreted by an unsafe parser.\\n* Unsafe reflection or scripting interfaces.\\n\\n**Severity:** High (likely CVSS 8.0+ if RCE with network access)\\n**Exploitability:** High — requires only network access and specially crafted data.\\n**Impact:** Full compromise of system integrity and potential data breach.\\n\\n---\\n\\n### **2. Associated Risks**\\n\\n* **Remote Code Execution**: Attacker can run arbitrary code on the host, leading to potential full control of the system.\\n* **Lateral Movement**: Once compromised, attacker can pivot to other internal services or databases.\\n* **Data Exfiltration or Destruction**: Attacker can access or delete sensitive data.\\n* **Service Disruption**: May result in Denial of Service (DoS) or persistent malware.\\n\\n---\\n\\n### **3. Codebase Usage Assessment**\\n\\n#### What to search in the codebase:\\n\\n1. **Direct dependencies**:\\n    * `pom.xml`, `build.gradle`, `package.json`, etc. for:\\n\\n      ```xml\\n      <dependency>\\n        <groupId>com.example</groupId>\\n        <artifactId>library-x</artifactId>\\n        <version>1.2.3</version>\\n      </dependency>\\n      ```\\n\\n2. **Transitive dependencies**:\\n    * Use `mvn dependency:tree`, `gradle dependencies`, or `npm ls` to find transitive inclusion of library X.\\n\\n3. **Dangerous usage patterns**:\\n    * Look for:\\n\\n      ```java\\n      new XDeserializer().deserialize(userInput);\\n      scriptEngine.eval(userInput);\\n      ```\\n    * Untrusted data passed to parsing APIs from the vulnerable library.\\n\\n4. **Definition of Ready**\\n\\n    To begin this ticket, the following must be clear and confirmed:\\n    \\n    * [ ] Identify exact **fixed version** of library X to upgrade to.\\n    * [ ] Determine **locations of usage** (direct/transitive) in the codebase.\\n    * [ ] Assess whether any **test coverage** exists for library usage.\\n    * [ ] Check if other systems/packages are indirectly affected by the change (e.g., via shared modules).\\n\\n5. **Acceptance Criteria**\\n\\n    * [ ] Library X is upgraded to a **non-vulnerable version**.\\n    * [ ] All occurrences of the vulnerable version in dependency files are removed.\\n    * [ ] All deserialization or dynamic input-handling usage of the library is **audited**.\\n    * [ ] No runtime errors or test regressions after upgrade.\\n    * [ ] A **test case or sandbox test** exists to confirm that malicious payloads no longer lead to RCE.\\n    * [ ] Risk assessment is documented in the ticket or changelog.\\n\\n6. **Definition of Done**\\n\\n    * [ ] Patch version of library X is merged and deployed.\\n    * [ ] All CI/CD tests pass.\\n    * [ ] Security test or validation script verifies the vulnerability is no longer exploitable.\\n    * [ ] Documentation/changelog updated to reflect the change and mitigation of CVE-2023-12345.\\n    * [ ] Ticket includes references to the CVE, fixed version, and any upstream advisory.\\n    * [ ] Sign-off from Security and QA teams.\\n\"}]}]",
@@ -486,8 +486,8 @@
       "updatedAt": ""
     },
     {
-      "id": "update-readme-0139141d-634b-4da3-b2aa-e3f43a4ec19a",
-      "qlikId": "update-readme-0139141d-634b-4da3-b2aa-e3f43a4ec19a",
+      "id": "2539141d-634b-4da3-b2aa-e3f43a4ec19a",
+      "qlikId": "2539141d-634b-4da3-b2aa-e3f43a4ec19a",
       "name": "Update README.md",
       "description": "You are an AI assistant specialized in software development.\nYour task is to update a README markdown file existing for this project under Git. The README should follow standard practice in terms of the layout of the README file.\n\nDon't remove existing sections, but complete them or correct them.\n\nAdd missing sections if needed.\n\nInclude sections such as Project Title, Description, Installation Instructions, Usage Instructions, Documentation with the list all files with an extension md in a table, License Information. Include the repository tree at the end of the file. Aim for a professional and informative tone, ensuring clarity and comprehensiveness.\n\nThe README should be formatted in Markdown, with proper headings, bullet points, and code blocks where necessary to ensure readability and usability.",
       "relatedInformation": "[{\"type\":\"paragraph\",\"children\":[{\"text\":\"Example\"}]},{\"type\":\"code-block\",\"language\":\"markdown\",\"children\":[{\"text\":\"You are an AI assistant specialized in software development.\\nYour task is to update a README markdown file existing for this project under Git. The README should follow standard practice in terms of the layout of the README file.\\n\\nDon't remove existing sections, but complete them or correct them.\\n\\nAdd missing sections if needed.\\n\\nInclude sections such as Project Title, Description, Installation Instructions, Usage Instructions, Documentation with the list all files with an extension md in a table, License Information. Include the repository tree at the end of the file. Aim for a professional and informative tone, ensuring clarity and comprehensiveness.\\n\\nThe README should be formatted in Markdown, with proper headings, bullet points, and code blocks where necessary to ensure readability and usability.\\n\"}]},{\"type\":\"paragraph\",\"children\":[{\"text\":\"Result:\"}]},{\"type\":\"code-block\",\"language\":\"markdown\",\"children\":[{\"text\":\"# Daily Prompt Repository & AI Helper\\n\\n## Description\\n\\nThe Daily Prompt Repository & AI Helper is a collection of reusable prompt samples and AI usage guidelines designed to enhance productivity for developer and QA teams. It provides ready-to-use prompts for code generation, testing, documentation, and more, helping you streamline your workflow and leverage AI tools effectively.\\n\\n---\\n\\n## Installation Instructions\\n\\n1. **Clone the repository:**\\n   ```sh\\n   git clone https://github.com/<your-org>/daily-prompt.git\\n   cd daily-prompt\\n   ```\\n\\n2. **(Optional) Install dependencies:**  \\n   If you plan to use or extend any scripts or test templates, install the necessary dependencies as described in the relevant files.\\n\\n---\\n\\n## Usage Instructions\\n\\n- **Browse Prompt Samples:**  \\n  Explore the Markdown files in the root and `unit-test/` directories for ready-to-use prompts covering unit test writing, test data generation, documentation validation, and more.\\n\\n- **Copy & Adapt Prompts:**  \\n  Copy the prompt samples into your own workflow, adapting them as needed for your specific use case.\\n\\n- **Unit Test Templates:**  \\n  Use the provided TypeScript and Java test templates in `unit-test/test-sample.ts` and `unit-test/test-sample.java` to standardize your test writing.\\n\\n---\\n\\n## Documentation\\n\\nBelow is a list of all Markdown (`.md`) files in this repository:\\n\\n| File Name            | Description                        |\\n|----------------------|------------------------------------|\\n| README.md            | Project overview and instructions  |\\n| generate-readme.md   | Prompt and example for README file |\\n\\n---\\n\\n## License Information\\n\\nThis project is licensed under the [MIT License](LICENSE).  \\nYou are free to use, modify, and distribute this project in accordance with the license terms.\\n\\n---\\n\\n## Repository Tree\\n\\n```\\ndaily-prompt/\\n├── generate-readme.md\\n├── unit-test/\\n│   ├── test-sample.ts\\n│   └── test-sample.java\\n├── LICENSE\\n└──\\n\"}]}]",
